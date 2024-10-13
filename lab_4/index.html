@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="interaction.js"></script>
     <meta charset="utf-8">
     <title>Form Submission</title>
     <body>
@@ -12,11 +13,9 @@
             <input type="text" name="DOB" size="50">
             <input type="text" name="About" size="50">
 
-            <input type="submit" name="submit" value="submit">
+            <input type="submit" name="submit" value="submit" onclick="result(this.form)">
         </form>
-        <script>
-            function submit(form){var username= form.username.value; alert("You've Registed: " +username +", ")}
-        </script>
+
 
     </body>
 </head>
